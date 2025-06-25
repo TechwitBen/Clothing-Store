@@ -1,4 +1,4 @@
-import "./footer.css"
+import "./Footer.css"
 import { IoPersonOutline } from "react-icons/io5";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaPhoneAlt } from "react-icons/fa";
