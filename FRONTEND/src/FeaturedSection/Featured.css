@@ -1,0 +1,472 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Overal-div {
+  width: 100%;
+  min-height: auto;
+  margin-top: 20px;
+  /* border: 2px solid black; */
+  /* background-color: rgba(240, 240, 240, 0.966); */
+  background-color: white;
+}
+
+.header {
+  /* border: 1px solid rgb(87, 87, 92); */
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.second-head {
+  width: 400px;
+  min-height: 40px;
+}
+
+.header-text {
+  font-size: 25px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-left: 20px;
+}
+
+
+
+
+.overal-best {
+  /* border: 2px solid green; */
+
+  width: 100%;
+}
+
+.Overal-grid-div {
+   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  /* border: 2px solid yellow; */
+  width: 80%;
+  grid-auto-rows: minmax(auto, 1fr);
+  gap: 30px;
+  /* margin-top: 20px; */
+  margin: auto;
+  padding-left: 10px; 
+   padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  /* background-color: white; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* BUTTON STYLING  */
+.button1-overal {
+  /* border: 2px solid red; */
+  min-width: 100%;
+  min-height: 50px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.button1-sub {
+  /* border: 2px solid black; */
+  width: 180px;
+  display: flex;
+  justify-content: center;
+}
+
+.button1-sub button {
+  border: 2px solid black;
+  width: 150px;
+  height: 40px;
+  font-size: 17px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ion-icon {
+  font-size: 20px;
+  margin-left: 15px;
+  color: black;
+} */
+
+span {
+  color: black;
+  padding-bottom: 30px;
+}
+/* NEW ARRIVAL STYLING */
+
+.new-overal {
+  border: 2px saddlebrown solid;
+}
+.newarrival-nav {
+  max-width: 100%;
+  border: 2px solid blue;
+  margin-top: 50px;
+}
+.newarrival-text {
+  font-size: 18px;
+  letter-spacing: 3px;
+  font-weight: 500;
+}
+.Overal-new-grid-div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-auto-rows: minmax(auto, 1fr);
+  /* border: 2px solid yellow; */
+  width: 95%;
+  height: auto;
+
+  gap: 20px;
+  margin-top: 20px;
+  margin: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+}
+
+/* .new-grid-item{
+    border: 2px solid black;
+    border-radius: 20px;
+} */
+
+.discount-overal {
+  border: 2px solid red;
+  height: 570px;
+  margin-top: 30px;
+}
+.flash-sales-sub {
+  border: 2px solid purple;
+  width: 100%;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flash-text {
+  font-size: 23px;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+
+.flash-nav {
+  border: 2px solid blue;
+}
+
+
+.flash-grid-overal {
+  border: 2px solid rgb(95, 226, 43);
+  display: flex;
+
+  gap: 30px;
+  width: 100%;
+  height: 450px;
+  margin-top: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.slider-track {
+   display: flex;
+   transition: transform 1s ease-in-out;
+   gap: 30px;
+ }
+
+
+.flash-flex {
+  border: 2px solid rgb(28, 28, 221);
+  /* flex: 1 1 200px; */
+  min-width: 425px;
+  height: 450px;
+  
+  display: flex;
+  flex-direction: column;
+}
+
+.flex1{
+  border: 2px solid black;
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+.flex1Img{
+  width: 100%;
+  height: 100%;
+}
+.flex1-btn{
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+  width: 100px;
+  border-radius: 5px;
+  z-index: 1000;
+
+}
+.flex2{
+height: 50px;
+border: 2px solid brown;
+}
+
+.flex2-Div{
+border: 2px solid green;
+display: flex;
+justify-content: center;
+height: 100%;
+align-items: center;
+}
+
+
+
+
+
+
+.leftBtn{
+  position: absolute;
+  left: 0;
+  top: 40%;
+  border: 2px solid black;
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+  border-radius: 50%;
+}
+.rightBtn{
+  position: absolute;
+  right: 0;
+  top: 40%;
+  border: 2px solid black;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px){
+ .flash-flex {
+  
+  min-width: 300px;
+  height: 400px;
+ }
+}
+
+/* styles for tablets and laptops */
+@media screen and (max-width: 1024px) {
+   .Overal-grid-div {
+    grid-template-columns: repeat(4, minmax(155px, 1fr));
+    gap: 15px;
+    padding: 8px;
+     width: 100%;
+      overflow-x: scroll;
+       grid-auto-flow: column; 
+      grid-template-rows: repeat(2, 1fr); 
+  }
+  .button1-sub button {
+    width: 130px;
+  }
+  .Overal-new-grid-div {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    padding: 8px;
+  }
+  .button1-sub button {
+    width: 130px;
+  }
+   .flash-grid-overal {
+  border: 2px solid yellow;
+  display: flex;
+  width: 100%;
+  height: 400px;
+  margin-top: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+  .flash-flex {
+  
+  min-width: 370px;
+  height: 400px;
+  
+  display: flex;
+  flex-direction: column;
+}
+
+.flex1{
+  border: 2px solid black;
+  width: 100%;
+  height: 350px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+
+.flex2{
+height: 50px;
+border: 2px solid brown;
+}
+.rightBtn{
+  right: 15px;
+}
+}
+
+/* ✅ Medium Screens (Tablets & Small Laptops - 768px and below) */
+@media screen and (max-width: 768px) {
+  .Overal-grid-div {
+    grid-template-columns: repeat(4, minmax(155px, 1fr));
+    gap: 15px;
+    padding: 8px;
+     width: 100%;
+      /* overflow-x: scroll; */
+       grid-auto-flow: column; 
+      grid-template-rows: repeat(2, 1fr); 
+  }
+  .button1-sub button {
+    width: 130px;
+  }
+  .Overal-new-grid-div {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    padding: 8px;
+  }
+  .button1-sub button {
+    width: 130px;
+  }
+  .discount-overal {
+  height: 550px;
+
+}
+
+/* FLASHSALE MEDIA STYLING */
+   .flash-grid-overal {
+  width: 100%;
+  height: 400px;
+}
+
+  .flash-flex {
+  
+  min-width: 450px;
+  height: 400px;
+}
+
+.flex1{
+  height: 350px;
+}
+
+.rightBtn{
+  right: 15px;
+}
+}
+
+/* ✅ Small Screens (Phones - 480px and below)  */
+
+@media screen and (max-width: 480px) {
+  
+  /* STYLING FOR BEST SELLING OVERAL DIV */
+  .Overal-grid-div {
+   grid-template-rows: repeat(2, 1fr); 
+    grid-auto-flow: column; 
+    grid-template-columns: repeat(4, minmax(120px, 1fr));
+    gap: 16px;
+    /* border: 2px solid yellow; */
+    width: 100%;
+    /* overflow: hidden; */
+    overflow-x: scroll;
+  }
+
+  /* NEW ARRIVAL OVERAL DIV STYLING */
+  .Overal-new-grid-div {
+  
+    grid-template-rows: repeat(3, 1fr); 
+    grid-auto-flow: column; 
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+    gap: 16px;
+    border: 2px solid yellow;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .inside-grid1 {
+    height: 100px;
+    /* border: 2px solid red; */
+  }
+
+.discount-overal {
+  height: 430px;
+
+}
+
+.flash-grid-overal {
+  
+
+  gap: 15px;
+  width: 100%;
+  height: auto;
+  margin-top: 30px;
+  position: relative;
+ 
+}
+.flash-flex {
+    min-width: 370px;
+      height: 300px;
+  
+
+  }
+  .flex1{
+    height:250px;
+   
+    background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  }
+.flex1Img{
+  width: 100%;
+  height: 100%;
+}
+
+  .flex2{
+height: 50px;
+border: 2px solid brown;
+}
+
+.leftBtn{
+  
+  left: 15px;
+  top: 40%;
+  
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+  border-radius: 50%;
+}
+.rightBtn{
+  position: absolute;
+  right: 20px;
+  top: 40%;
+  border: 2px solid black;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+}

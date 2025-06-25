@@ -1,0 +1,103 @@
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+}
+
+
+.side-overal {
+  max-width: 350px;
+  min-height: 500px;
+  position: absolute;
+  top: 45px; 
+  right: -300px;
+  background-color: white;
+  transition: right 0.3s ease-in-out;
+  z-index: 100; 
+  box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.2);
+  background-color: rgb(14, 13, 13);
+  display: none;
+}
+
+
+.side-overal.open {
+  right: 0;
+  display: block;
+  transition: all 0.5 ease-in-out;
+}
+
+
+.side-bar {
+
+  max-width: 250px;
+  max-width: 100%;
+  min-height: 100%;
+  display: flex;
+  
+  flex-direction: column;
+  
+}
+
+
+.list-container {
+  /* border: 2px solid green; */
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  font-weight: 400;
+  width: 100%;
+  padding: 20px;
+  row-gap: 5px;
+  color: white;
+}
+
+
+.list-items {
+  width: 250px;
+  min-height: 50px;
+  text-align: justify;
+  padding: 15px;
+  border-radius: 10px;
+  
+  transition: background-color 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+}
+
+
+.list1 {
+  margin-bottom: 30px;
+  border-bottom: 2px solid rgba(230, 226, 226, 0.959);
+  border-radius: 0;
+  font-family: "Lucida Handwriting", cursive;
+  color: white;
+  font-size: 20px;
+}
+
+
+.list2:hover {
+  background-color: rgb(22, 22, 248);
+  color: white;
+  cursor: pointer;
+}
+.x-icon-div{
+  position: relative;
+}
+
+
+
+.list4{
+ display: flex;
+ align-items: center;
+
+}
+.span-list{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

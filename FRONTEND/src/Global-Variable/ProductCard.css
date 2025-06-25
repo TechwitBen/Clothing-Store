@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+.grid-item {
+  /* border: 2px solid black; */
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+.inside-grid1 {
+  /* border: 2px solid purple; */
+  height: 200px;
+  display: flex;
+  position: relative;
+  /* border: 1px solid; */
+}
+.product-image {
+  width: 100%;
+  height: 100%;
+  
+  /* background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;  */
+}
+
+.inside-grid2 {
+  height: 75px;
+  color: black;
+  /* background-color: orange; */
+  /* border: 2px solid red; */
+}
+/* STYLING FOR THE PRICES AND THE REST  */
+.grid-text {
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+.ptext1 {
+  font-size: 13px;
+  font-weight: 400;
+}
+.ptext2 {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.ptext4 {
+  font-size: 14px;
+  font-weight: 700;
+}
+.ptext3 {
+  font-weight: 700;
+}
+.pptext3 {
+  font-weight: 400;
+  text-decoration: line-through;
+}
+/* STYLING FOR THE PRICE AND ADD TO CART */
+
+.addtocart {
+  /* border: 2px solid black; */
+  display: flex;
+  width: 100%;
+  height: 30px;
+  position: relative;
+  align-items: center;
+}
+.addtocart button {
+  /* border: 2px solid rgb(177, 172, 172); */
+  font-size: 14px;
+  width: 100px;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 5px;
+  /* background-color: black; */
+}
+
+.addtocart button:hover {
+  background-color: black;
+  color: white;
+  border: 2px solid black;
+}
+.addtocart button:active{
+  background-color: blue;
+  color: white;
+  border: 2px solid transparent;
+}
+
+@media screen and (max-width: 768px) {
+  .inside-grid1 {
+  height: 150px;
+ 
+}
+.ptext1 {
+  font-size: 12px;
+}
+.ptext2{
+   font-size: 12px;
+   font-weight: 600;
+}
+.addtocart button{
+  font-size: 13px;
+}
+}
+
+@media screen and (max-width: 480px) {
+
+
+.inside-grid1 {
+  /* border: 2px solid purple; */
+  height: 150px;
+  display: flex;
+  position: relative;
+  /* border: 1px solid; */
+}
+
+ .inside-grid2 {
+    height: 75px;
+    color: black;
+    /* background-color: orange; */
+    /* border: 2px solid red; */
+  }
+  .grid-text {
+    font-size: 11px;
+  }
+  .ptext3{
+    font-size: 13px;
+  }
+  .pflex1 {
+    width: 40px;
+    height: 20px;
+    font-size: 13px;
+  }
+  .ptext2 {
+    font-weight: 400;
+    white-space: nowrap;
+  }
+  .addtocart {
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 30px;
+
+
+    align-items: center;
+  }
+  .addtocart button {
+    /* border: 2px solid black; */
+    font-size: 12px;
+    width: 70px;
+    height: 25px;
+    border-radius: 3px;
+    /* position: absolute; */
+    /* top: 0;
+    right: 0;
+    margin-right: 5px; */
+    /* background-color: black; */
+  }
+
+
+
+}
