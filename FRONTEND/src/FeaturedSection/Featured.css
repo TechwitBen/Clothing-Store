@@ -147,12 +147,14 @@ span {
 } */
 
 .discount-overal {
-  border: 2px solid red;
-  height: 570px;
+  /* border: 2px solid red; */
+  
+  height: 450px;
   margin-top: 30px;
 }
+  
 .flash-sales-sub {
-  border: 2px solid purple;
+  /* border: 2px solid purple; */
   width: 100%;
   min-height: 50px;
   display: flex;
@@ -166,18 +168,18 @@ span {
   letter-spacing: 3px;
 }
 
-.flash-nav {
+/* .flash-nav {
   border: 2px solid blue;
-}
+} */
 
 
 .flash-grid-overal {
-  border: 2px solid rgb(95, 226, 43);
+  /* border: 2px solid rgb(95, 226, 43); */
   display: flex;
-
+ 
   gap: 30px;
   width: 100%;
-  height: 450px;
+  height: 350px;
   margin-top: 30px;
   position: relative;
   overflow: hidden;
@@ -185,89 +187,80 @@ span {
 
 .slider-track {
    display: flex;
+   /* border: 10px solid red; */
    transition: transform 1s ease-in-out;
-   gap: 30px;
+   gap: 10px;
+   padding-left: 10px;
  }
 
 
 .flash-flex {
-  border: 2px solid rgb(28, 28, 221);
-  /* flex: 1 1 200px; */
-  min-width: 425px;
-  height: 450px;
+  /* border: 2px solid rgb(28, 28, 221); */
+  
+  min-width: 190px;
+  height: 250px;
   
   display: flex;
   flex-direction: column;
 }
 
 .flex1{
-  border: 2px solid black;
+  /* border: 2px solid black; */
   width: 100%;
-  height: 400px;
+  height: 200px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
-}
-.flex1Img{
-  width: 100%;
-  height: 100%;
-}
+  } 
 .flex1-btn{
   position: absolute;
   bottom: 20px;
   right: 10px;
-  width: 100px;
+  width: 80px;
   border-radius: 5px;
   z-index: 1000;
+  font-size: 13px;
 
 }
 .flex2{
 height: 50px;
-border: 2px solid brown;
+/* border: 2px solid brown; */
 }
-
 .flex2-Div{
-border: 2px solid green;
+/* border: 2px solid green; */
 display: flex;
 justify-content: center;
 height: 100%;
 align-items: center;
 }
 
-
-
-
-
-
 .leftBtn{
   position: absolute;
-  left: 0;
-  top: 40%;
+  left: 16px;
+  top: 25%;
   border: 2px solid black;
-  width: 50px;
-  height: 50px;
-  margin-left: 10px;
+  width: 30px;
+  height: 30px;
+  /* margin-left: 10px; */
   border-radius: 50%;
+  font-size: 13px;
 }
 .rightBtn{
   position: absolute;
-  right: 0;
-  top: 40%;
+  right: 17px;
+  top: 25%;
   border: 2px solid black;
-  width: 50px;
-  height: 50px;
-  margin-right: 10px;
+   width: 30px;
+  height: 30px;
+  /* margin-right: 10px; */
   border-radius: 50%;
+  font-size: 13px;
 }
+/*
 
-@media screen and (min-width: 769px) and (max-width: 1024px){
- .flash-flex {
-  
-  min-width: 300px;
-  height: 400px;
- }
-}
+
+
 
 /* styles for tablets and laptops */
 @media screen and (max-width: 1024px) {
@@ -291,45 +284,200 @@ align-items: center;
   .button1-sub button {
     width: 130px;
   }
-   .flash-grid-overal {
-  border: 2px solid yellow;
+  
+}
+
+
+@media screen and (min-width: 768px) {
+.discount-overal {
+  /* border: 2px solid red; */
+  
+  height: 570px;
+  margin-top: 30px;
+}
+
+.flash-grid-overal {
+  /* border: 2px solid rgb(95, 226, 43); */
   display: flex;
+ 
+  /* gap: 30px; */
   width: 100%;
-  height: 400px;
+  height: 450px;
   margin-top: 30px;
   position: relative;
   overflow: hidden;
 }
 
-  .flash-flex {
+.slider-track {
+   display: flex;
+   /* border: 10px solid red; */
+   transition: transform 1s ease-in-out;
+   gap: 20px;
+   /* padding-left: 20px; */
+ }
+
+
+ .flash-flex {
+  /* border: 2px solid rgb(28, 28, 221); */
   
-  min-width: 370px;
-  height: 400px;
+  min-width: 425px;
+  height: 450px;
   
   display: flex;
   flex-direction: column;
 }
 
+
+
+
 .flex1{
-  border: 2px solid black;
+  /* border: 2px solid black; */
   width: 100%;
-  height: 350px;
+  height: 400px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
+  } 
+
+  
+.flex1Img{
+  width: 100%;
+  height: 100%;
+}
+.flex1-btn{
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+  width: 100px;
+  border-radius: 5px;
+  z-index: 1000;
+
+}
+.flex2{
+height: 50px;
+/* border: 2px solid brown; */
+}
+
+.flex2-Div{
+/* border: 2px solid green; */
+display: flex;
+justify-content: center;
+height: 100%;
+align-items: center;
 }
 
 
+
+
+
+
+.leftBtn{
+  position: absolute;
+  left: 20px;
+  top: 40%;
+  border: 2px solid black;
+  width: 50px;
+  height: 50px;
+  /* margin-left: 10px; */
+  border-radius: 50%;
+  font-size: 15px;
+}
+.rightBtn{
+  position: absolute;
+  right: 20px;
+  top: 40%;
+  border: 2px solid black;
+  width: 50px;
+  height: 50px;
+  /* margin-right: 10px; */
+  border-radius: 50%;
+  font-size: 15px;
+}
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px){
+.discount-overal {
+  height: 500px;
+  margin-top: 30px;
+}
+  
+
+
+
+
+
+.flash-grid-overal {
+  gap: 30px;
+  width: 100%;
+  height: 400px;
+}
+
+
+
+  .slider-track {
+   display: flex;
+   /* border: 10px solid red; */
+   gap: 10px;
+   /* padding-left: 20px; */
+ }
+
+
+ .flash-flex {
+  min-width: 230px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+.flex1{
+  width: 100%;
+  height: 300px;
+  } 
+
+.flex1-btn{
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+  width: 100px;
+  border-radius: 5px;
+  z-index: 1000;
+
+}
 .flex2{
 height: 50px;
-border: 2px solid brown;
+}
+
+.flex2-Div{
+display: flex;
+justify-content: center;
+height: 100%;
+align-items: center;
+}
+
+
+
+
+
+
+.leftBtn{
+  left: 15px;
+  top: 40%;
+  width: 40px;
+  height: 40px;
+  font-size: 13px;
 }
 .rightBtn{
   right: 15px;
+  top: 40%;
+  width: 40px;
+  height: 40px;
+  font-size: 15px;
 }
 }
-
 /* ✅ Medium Screens (Tablets & Small Laptops - 768px and below) */
 @media screen and (max-width: 768px) {
   .Overal-grid-div {
@@ -352,30 +500,6 @@ border: 2px solid brown;
   .button1-sub button {
     width: 130px;
   }
-  .discount-overal {
-  height: 550px;
-
-}
-
-/* FLASHSALE MEDIA STYLING */
-   .flash-grid-overal {
-  width: 100%;
-  height: 400px;
-}
-
-  .flash-flex {
-  
-  min-width: 450px;
-  height: 400px;
-}
-
-.flex1{
-  height: 350px;
-}
-
-.rightBtn{
-  right: 15px;
-}
 }
 
 /* ✅ Small Screens (Phones - 480px and below)  */
@@ -411,62 +535,4 @@ border: 2px solid brown;
     /* border: 2px solid red; */
   }
 
-.discount-overal {
-  height: 430px;
-
-}
-
-.flash-grid-overal {
-  
-
-  gap: 15px;
-  width: 100%;
-  height: auto;
-  margin-top: 30px;
-  position: relative;
- 
-}
-.flash-flex {
-    min-width: 370px;
-      height: 300px;
-  
-
-  }
-  .flex1{
-    height:250px;
-   
-    background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  }
-.flex1Img{
-  width: 100%;
-  height: 100%;
-}
-
-  .flex2{
-height: 50px;
-border: 2px solid brown;
-}
-
-.leftBtn{
-  
-  left: 15px;
-  top: 40%;
-  
-  width: 40px;
-  height: 40px;
-  margin-left: 10px;
-  border-radius: 50%;
-}
-.rightBtn{
-  position: absolute;
-  right: 20px;
-  top: 40%;
-  border: 2px solid black;
-  width: 40px;
-  height: 40px;
-  margin-right: 10px;
-  border-radius: 50%;
-}
 }

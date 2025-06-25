@@ -6,7 +6,7 @@ export default function Grids() {
       <div className="Grid-Overal">
         <div className="Grid-item  Griditem1">
           <div className="Griditem1-div1">
-            {/* <img src="https://images.unsplash.com/photo-1574015974293-817f0ebebb74?q=80&w=373&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" className="Griditem1-div1-img" /> */}
+            <img src="https://images.unsplash.com/photo-1574015974293-817f0ebebb74?q=80&w=373&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" className="Griditem1-div1-img" />
           </div>
           <div className="Griditem1-div2">
             <div className="Griditem1-div2-div">

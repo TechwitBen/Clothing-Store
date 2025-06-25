@@ -56,7 +56,7 @@ const [currentIndex, setCurrentIndex] = useState(0);
     <>
       <div
         className="home border-2 border-red-900"style={{
-          backgroundImage: `url("https://images.pexels.com/photos/9594674/pexels-photo-9594674.jpeg")`,
+            backgroundImage: `url(${isMobile? mobileImage: "https://images.pexels.com/photos/9594674/pexels-photo-9594674.jpeg"})`,
           transition: "background-image 4s ease-in-out",
         }}>
        

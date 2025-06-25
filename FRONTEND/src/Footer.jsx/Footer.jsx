@@ -59,11 +59,11 @@ export default function Footer(){
     </div>
     <div className="footer-location-flexItem">
         <FaPhoneAlt  className="footerIcon"/>
-        <h2>(+234)8166613907</h2>
+        <h2>(+234)9012802102</h2>
     </div>
     <div className="footer-location-flexItem">
        <IoMail  className="footerIcon"/>
-        <h2>benClothing21@gmail</h2>
+        <h2>benedictleo34@gmail</h2>
     </div>
     <div className="footer-location-flexItem loca1">
         <IoLogoWhatsapp  className="footerIcon whatIcon"/>

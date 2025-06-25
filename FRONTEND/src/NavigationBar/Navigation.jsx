@@ -10,7 +10,7 @@ import { FaXmark } from "react-icons/fa6";
 import Profile from "../ProfileSection/Profile";
 import Sidebar from "../SideBarSection/Sidebar";
 import { useCart } from "../Global-Variable/CartContext";
-import { useNavigate } from "react-router-dom"
+import { useNavigate } from "react-router-dom";
 
 function Navigation() {
   const [open, setOpen] = useState(false);
@@ -18,7 +18,7 @@ function Navigation() {
   const { cartItems } = useCart();
   const [cart, setCart] = useState(false);
   const [btnClick, setBtnClick] = useState(false);
-    const navigate = useNavigate()
+  const navigate = useNavigate();
 
   let home = "/";
   let about = "/about";
@@ -51,14 +51,14 @@ function Navigation() {
     }
   }, [cartItems]);
 
-  const cartClick = () =>{
-    if (cartItems.length < 1){
-        alert("Your Cart is Empty")
-         navigate("/")
-    }else{
-        null
+  const cartClick = () => {
+    if (cartItems.length < 1) {
+      alert("Your Cart is Empty");
+      navigate("/");
+    } else {
+      null;
     }
-  }
+  };
 
   return (
     <>

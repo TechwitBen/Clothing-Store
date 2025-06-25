@@ -46,10 +46,20 @@ gap: 10px;
 .Griditem1-div1{
     border: 1px solid black;
     width: 60%;
-      background-image:url(https://images.unsplash.com/photo-1574015974293-817f0ebebb74?q=80&w=373&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) ;
+    display: flex;
+justify-content: center;
+align-items: center;
+      /* background-image:url(https://images.unsplash.com/photo-1574015974293-817f0ebebb74?q=80&w=373&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) ;
  background-size: cover;
   background-repeat: no-repeat;
-  background-position: center; 
+  background-position: center;  */
+}
+
+.Griditem1-div1 img{
+height: 100px;
+width: 100px;
+border-radius: 5px;
+border: 1px solid black;
 }
 
 
@@ -60,6 +70,7 @@ gap: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
+     color: black;
 }
 .Griditem1-div2-div{
     border: 2px solid red;
@@ -76,7 +87,7 @@ gap: 10px;
 }
 .Griditem1-div2-div button{
     font-size: 13px;
-    width: 100%;
+    width: 90%;
     background-color: blue;
 }
 .Griditem2{
@@ -98,7 +109,7 @@ background-color: #819A91;
     color:  #F7F7F7;
 }
 .Griditem2-div button{
-width: 100%;
+width: 90%;
 background-color:black;
 color:  white;
 }
@@ -125,6 +136,8 @@ font-weight: 600;
     background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  display: flex;
+ justify-content: start;
 }
 
 .Griditem4-div{
@@ -149,10 +162,21 @@ font-weight: 600;
 
 
 
-@media screen and (min-width: 769px) and (max-width: 1024px){
+/* @media screen and (min-width: 769px) and (max-width: 1024px){
  
-}
+} */
 @media screen and (min-width: 769px){
+.Griditem1-div1 {
+border: 2px solid yellowgreen;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.Griditem1-div1 img{
+height: 150px;
+width: 150px;
+border-radius: 5px;
+}
  .Griditem1-div2{
     border: 1px solid black;
     width: 40%;
@@ -170,6 +194,7 @@ font-weight: 600;
     justify-content: center;
     align-items: center;
     font-size: 15px;
+    color: black;
     /* font-weight: 600; */
 
 
@@ -209,10 +234,19 @@ font-size: 15px;
 
 }
 
+/* .Griditem4{
+   
+} */
+
 .Griditem4{
-    display: flex;
+    background-image: url(https://images.pexels.com/photos/6831609/pexels-photo-6831609.jpeg);
+    background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+   display: flex;
     justify-content: start;
 }
+
 .Griditem4-div{
     border: 2px solid black;
     width: 40%;

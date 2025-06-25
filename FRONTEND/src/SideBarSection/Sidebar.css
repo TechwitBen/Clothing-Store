@@ -43,9 +43,89 @@ body {
   
 }
 
-
 .list-container {
   /* border: 2px solid green; */
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  font-weight: 400;
+  width: 100%;
+  gap: 20px;
+  /* padding: 20px; */
+  /* row-gap: 5px; */
+  color: white;
+}
+.list-items {
+  width: 250px;
+  min-height: 50px;
+  /* border: 1px solid black; */
+  text-align: justify;
+  /* padding: 15px; */
+  border-radius: 10px;
+  transition: background-color 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-left: 5px;
+}
+#firstList{
+  /* justify-items: center; */
+  justify-content: center;
+  font-family: Cambria, serif, cursive;
+  font-size: 20px;
+  border: none;
+  border-bottom: 2px solid white;
+  border-radius: 0;
+}
+
+#secondtList{
+justify-content: space-between;
+
+}
+#secondtList div{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.List-div{
+/* border: 2px solid blue; */
+min-height: 80px;
+width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+/* align-items: center; */
+
+/* position: absolute;
+border: 2px solid blue;
+width: 150px;
+top: 65%;
+left: 5px; */
+}
+.divList{
+  /* border: 2px solid red; */
+  min-height: 40px;
+  /* align-self: center; */
+ display: flex;
+ align-items: center;
+}
+
+.divList:hover{
+  background-color: rgb(59, 58, 58);
+  color: white;
+}
+.divList:active{
+  background-color: rgb(34, 33, 33);
+}
+.list-items:hover {
+  background-color: rgb(22, 22, 248);
+  color: white;
+  cursor: pointer;
+}
+
+/* .list-container {
+  border: 2px solid green;
   display: flex;
   flex-direction: column;
   font-size: 18px;
@@ -91,13 +171,9 @@ body {
 
 
 
-.list4{
- display: flex;
- align-items: center;
 
-}
 .span-list{
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
