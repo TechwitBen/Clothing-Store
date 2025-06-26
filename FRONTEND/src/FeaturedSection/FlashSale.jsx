@@ -140,27 +140,30 @@ function FlashSale() {
     },
   ];
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 769);
-  const [visible, setVisible] = useState(0);
+  // const [isMobile, setIsMobile] = useState(window.innerWidth <= 769);
+  // const [visible, setVisible] = useState(0);
 
-  useEffect(() => {
-    if (!isMobile) {
-      setVisible(3);
-      // return () => clearInterval(interval);
-    } else {
-      setVisible(2);
-    }
-  }, [isMobile]);
+//   useEffect(() => {
+//     if (!isMobile) {
+//       setVisible(3);
+//       // return () => clearInterval(interval);
+//     } else {
+//       setVisible(2);
+//     }
+//   }, [isMobile]);
 
-  useEffect(() => {
-    function handleResize() {
-      setIsMobile(window.innerWidth <= 768);
-    }
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
+//   useEffect(() => {
+//     function handleResize() {
+//   const mobile = window.innerWidth <= 768;
+//   setIsMobile(mobile);
+//   setVisible(mobile ? 2 : 3);
+// }
+//     window.addEventListener("resize", handleResize);
+//     return () => window.removeEventListener("resize", handleResize);
+//   }, []);
 
-  const visibleCards = visible;
+  // console.log(visible)
+  const visibleCards = 3;
   const totalCards = flashSale.length;
 
   useEffect(() => {
