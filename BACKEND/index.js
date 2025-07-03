@@ -107,7 +107,9 @@ app.post("/login", (req, res, next) => {
       return res.status(500).json({ message: err.message || "Internal error" });
     }
     if (!userDetail) {
-      return res.status(401).json({ message: "Incorrect Username or password" });
+      return res
+        .status(401)
+        .json({ message: "Incorrect Username or password" });
     }
 
     req.login(userDetail, (err) => {
@@ -136,14 +138,13 @@ app.get("/logout", (req, res) => {
 
 passport.use(
   new Strategy(async function verify(username, password, cb) {
-  
     try {
       const customerDetails = await db.query(
         "SELECT * FROM customer WHERE email = $1",
         [username]
       );
       const detail = customerDetails.rows;
-        
+
       if (detail.length === 0) {
         return cb(null, false, { message: "User not found" });
         //    res.json({ message: "User not found" });

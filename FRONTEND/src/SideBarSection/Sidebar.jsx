@@ -5,12 +5,14 @@ import { useState } from "react";
 
 function Sidebar({ className, setOpen }) {
   const [dropdown, setDropDown] = useState(false);
+  const [catDropdown, setCatDropDown] = useState(false);
 
-
-function dropList(){
-  setDropDown((prev)=>!prev)
-}
-
+  function dropProfileList() {
+    setDropDown((prev) => !prev);
+  }
+  function dropCategoryList() {
+    setCatDropDown((prev) => !prev);
+  }
 
   return (
     <>
@@ -24,7 +26,7 @@ function dropList(){
               Ben's Clothings
             </p>
 
-            <li className="list-items" id="secondtList" onClick={dropList}>
+            <li className="list-items" id="secondtList" onClick={dropProfileList}>
               <div>
                 <ion-icon
                   name="person-circle-outline"
@@ -32,25 +34,48 @@ function dropList(){
                 ></ion-icon>
                 Profile
               </div>
-             
+
               <ion-icon
-                name={dropdown?"person-circle-outline":"list-outline"}
+                name={dropdown ? "person-circle-outline" : "list-outline"}
                 class="text-white pr-1"
-                onClick={dropList}
+                onClick={dropCategoryList}
               ></ion-icon>
             </li>
 
-             {dropdown && (
-            <div className="List-div" id="thirdList">
-              <Link to="/register"><li className="divList">Register</li></Link>
-              <Link to="/login"><li className="divList">Login</li></Link>
-            </div>
-)}
+            {dropdown && (
+              <div className="List-div" id="thirdList">
+                <Link to="/register">
+                  <li className="divList">Register</li>
+                </Link>
+                <Link to="/login">
+                  <li className="divList">Login</li>
+                </Link>
+              </div>
+            )}
 
-            <li className="list-items" id="fourthList">
-              <ion-icon name="list-outline" class="text-white"></ion-icon>
-              Categories
+            <li className="list-items" id="secondtList" onClick={dropCategoryList}>
+              <div>
+                <ion-icon name="list-outline" 
+                class="text-white"
+                ></ion-icon>
+                Category
+              </div>
+
+              <ion-icon
+                name={catDropdown ? "person-circle-outline" : "list-outline"}
+                class="text-white pr-1"
+                onClick={dropCategoryList}
+              ></ion-icon>
             </li>
+
+            {catDropdown && (
+              <div className="List-div" id="thirdList">
+                <li className="divList">Men's Collection</li>
+                <li className="divList">Female Collection</li>
+                <li className="divList">Accessories</li>
+              </div>
+            )}
+
             <li className="list-items" id="fifthList">
               Help
               <ion-icon

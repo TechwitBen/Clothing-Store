@@ -132,7 +132,7 @@ function FlashSale() {
     },
     {
       id: 18,
-      name: "Sports Sneakers",
+      name: "Sports Sneakersss",
       price: "$75",
       type: "Sneakers",
       image:
@@ -163,7 +163,7 @@ function FlashSale() {
 //   }, []);
 
   // console.log(visible)
-  const visibleCards = 3;
+  const visibleCards = 1;
   const totalCards = flashSale.length;
 
   useEffect(() => {
@@ -176,7 +176,7 @@ function FlashSale() {
   const goNext = () => {
     setCurrentIndex((prevIndex) => {
       const nextIndex = prevIndex + visibleCards;
-      return nextIndex >= totalCards ? 0 : nextIndex;
+      return nextIndex >= totalCards-2 ? 0 : nextIndex;
     });
   };
 
