@@ -1,18 +1,20 @@
 import "./Sidebar.css";
 import { Link } from "react-router-dom";
 import { FaXmark } from "react-icons/fa6";
+import { IoIosArrowDown } from "react-icons/io";
+import { IoIosArrowUp } from "react-icons/io";
 import { useState } from "react";
 
 function Sidebar({ className, setOpen }) {
   const [dropdown, setDropDown] = useState(false);
   const [catDropdown, setCatDropDown] = useState(false);
 
-  function dropProfileList() {
-    setDropDown((prev) => !prev);
-  }
-  function dropCategoryList() {
-    setCatDropDown((prev) => !prev);
-  }
+  // function dropProfileList() {
+  //   setDropDown((prev) => !prev);
+  // }
+  // function dropCategoryList() {
+  //   setCatDropDown((prev) => !prev);
+  // }
 
   return (
     <>
@@ -26,7 +28,11 @@ function Sidebar({ className, setOpen }) {
               Ben's Clothings
             </p>
 
-            <li className="list-items" id="secondtList" onClick={dropProfileList}>
+            <li
+              className="list-items"
+              id="secondtList"
+              onClick={() => setDropDown((prev) => !prev)}
+            >
               <div>
                 <ion-icon
                   name="person-circle-outline"
@@ -35,11 +41,11 @@ function Sidebar({ className, setOpen }) {
                 Profile
               </div>
 
-              <ion-icon
-                name={dropdown ? "person-circle-outline" : "list-outline"}
-                class="text-white pr-1"
-                onClick={dropCategoryList}
-              ></ion-icon>
+              {dropdown ? (
+                <IoIosArrowUp className="md:text-[20px] text-[15px] text-white pr-1 " />
+              ) : (
+                <IoIosArrowDown className="md:text-[20px] text-[15px] text-white pr-1" />
+              )}
             </li>
 
             {dropdown && (
@@ -53,19 +59,21 @@ function Sidebar({ className, setOpen }) {
               </div>
             )}
 
-            <li className="list-items" id="secondtList" onClick={dropCategoryList}>
+            <li
+              className="list-items"
+              id="secondtList"
+              onClick={() => setCatDropDown((prev) => !prev)}
+            >
               <div>
-                <ion-icon name="list-outline" 
-                class="text-white"
-                ></ion-icon>
+                <ion-icon name="list-outline" class="text-white"></ion-icon>
                 Category
               </div>
 
-              <ion-icon
-                name={catDropdown ? "person-circle-outline" : "list-outline"}
-                class="text-white pr-1"
-                onClick={dropCategoryList}
-              ></ion-icon>
+              {catDropdown ? (
+                <IoIosArrowUp className="md:text-[20px] text-[15px] text-white pr-1 " />
+              ) : (
+                <IoIosArrowDown className="md:text-[20px] text-[15px] text-white pr-1" />
+              )}
             </li>
 
             {catDropdown && (

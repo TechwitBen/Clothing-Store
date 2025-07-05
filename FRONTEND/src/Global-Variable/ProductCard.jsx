@@ -18,7 +18,7 @@ function ProductCard(props) {
           <h2 className="grid-text ptext2">{props.product.name}</h2>
           {/* DIV FOR THE ADD TO CART  */}
           <div className="addtocart">
-            <p className="grid-text ptext3">{props.product.price}</p>
+            <p className="grid-text ptext3">${props.product.price}</p>
             <button onClick={() => addToCart(props.product)}>
               Add to cart
             </button>

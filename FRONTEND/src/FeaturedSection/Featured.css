@@ -394,6 +394,11 @@ align-items: center;
   border-radius: 50%;
   font-size: 15px;
 }
+.header-text {
+  font-size: 20px;
+  
+ 
+}
 }
 
 @media screen and (min-width: 480px) and (max-width: 768px){
@@ -477,6 +482,12 @@ align-items: center;
   height: 40px;
   font-size: 15px;
 }
+
+.header-text {
+  font-size: 20px;
+  
+ 
+}
 }
 /* ✅ Medium Screens (Tablets & Small Laptops - 768px and below) */
 @media screen and (max-width: 768px) {
@@ -500,6 +511,11 @@ align-items: center;
   .button1-sub button {
     width: 130px;
   }
+  .header-text {
+  font-size: 18px;
+  
+ 
+}
 }
 
 /* ✅ Small Screens (Phones - 480px and below)  */
@@ -534,5 +550,10 @@ align-items: center;
     height: 100px;
     /* border: 2px solid red; */
   }
+/* .header-text {
+  font-size: 20px;
+  
+ 
+} */
 
 }

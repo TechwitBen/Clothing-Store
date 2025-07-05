@@ -139,7 +139,7 @@ function Navigation() {
                 setOpen(!open);
               }}
             >
-              {open ? <FaXmark className="close-btn" /> : <IoMenu />}
+              {open ? <FaXmark className="close-btn" /> : <IoMenu className="close-btn"/>}
             </li>
           </ul>
         </div>
