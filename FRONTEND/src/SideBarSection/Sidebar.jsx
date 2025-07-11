@@ -9,19 +9,9 @@ function Sidebar({ className, setOpen }) {
   const [dropdown, setDropDown] = useState(false);
   const [catDropdown, setCatDropDown] = useState(false);
 
-  // function dropProfileList() {
-  //   setDropDown((prev) => !prev);
-  // }
-  // function dropCategoryList() {
-  //   setCatDropDown((prev) => !prev);
-  // }
-
   return (
     <>
       <div className={`side-overal ${className}`}>
-        {/* <div className="x-icon-div">
-          <FaXmark className="close-btn" onClick={() => setOpen(false)} />
-        </div> */}
         <div className="side-bar">
           <ul className="list-container">
             <p className="list-items " id="firstList">

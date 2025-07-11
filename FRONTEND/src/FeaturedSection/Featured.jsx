@@ -5,9 +5,9 @@ import ProductCard from "../Global-Variable/ProductCard";
 
 function Featured() {
   // const [products, setProducts] = useState([]);
+  const [width, setWidth] = useState(window.innerWidth);
 
-  
-//  I DID THE BACKEND FOR THIS BUT I CAN'T RUN IT ON VERCEL OR GITHUB SO I JUST PASTED THE PRODUCTS HERE INSTEAD 
+  //  I DID THE BACKEND FOR THIS BUT I CAN'T RUN IT ON VERCEL OR GITHUB SO I JUST PASTED THE PRODUCTS HERE INSTEAD
   const products = [
     {
       id: 1,
@@ -73,9 +73,16 @@ function Featured() {
       image:
         "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/69/1274852/1.jpg?6242",
     },
-    
   ];
-
+  useEffect(() => {
+    const handleResize = () => {
+      setWidth(window.innerWidth);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   // useEffect(() => {
   //   async function productItem() {
@@ -98,16 +105,11 @@ function Featured() {
           {/* HEADER FOR THE FEATURED COLLECTION NAME  */}
           <header className="header">
             <div className="second-head">
-              <h2 className="header-text">FEATURED COLLECTIONS</h2>
+              <h2 className="header-text">FEATURED COLLECTION</h2>
               <hr />
             </div>
           </header>
           <div className="overal-best">
-            {/* BEST SELLING TEXT */}
-            {/* <nav className="best-nav">
-              <h2 className="best-text">BEST SELLING</h2>
-            </nav> */}
-
             {/* OVERAL DIV FOR GRID */}
             <div className="Overal-grid-div">
               {products.map((product) => (
@@ -122,72 +124,3 @@ function Featured() {
 }
 
 export default Featured;
-
-// .slider-wrapper {
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   gap: 1rem;
-//   position: relative;
-//   margin-top: 1rem;
-//   overflow: hidden;
-// }
-
-// .slider-window {
-//   width: 1275px; /* 3 cards * 425px each */
-//   overflow: hidden;
-// }
-
-// .slider-track {
-//   display: flex;
-//   transition: transform 0.6s ease-in-out;
-// }
-
-// .flash-flex {
-//   min-width: 425px;
-//   height: 450px;
-//   background: white;
-//   border-radius: 12px;
-//   overflow: hidden;
-//   margin-right: 10px;
-//   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-//   flex-shrink: 0;
-//   display: flex;
-//   flex-direction: column;
-// }
-
-// .flex1 {
-//   height: 70%;
-//   position: relative;
-// }
-
-// .flex1Img {
-//   width: 100%;
-//   height: 100%;
-//   object-fit: cover;
-// }
-
-// .flex1-btn {
-//   position: absolute;
-//   bottom: 10px;
-//   left: 10px;
-//   background: white;
-//   padding: 5px 10px;
-//   font-weight: bold;
-//   cursor: pointer;
-//   border-radius: 5px;
-// }
-
-// .flex2 {
-//   padding: 1rem;
-//   text-align: center;
-// }
-
-// .leftBtn,
-// .rightBtn {
-//   font-size: 2rem;
-//   background: none;
-//   border: none;
-//   cursor: pointer;
-//   z-index: 2;
-// }

@@ -1,44 +1,27 @@
-import clothingImg from "../images/GirlwithBag.jpg"
-import { useState, useEffect } from "react";
-import "./Picture.css"
-
+import "./Picture.css";
 
 export default function Picture() {
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-//   useEffect(() => {
-//     const timer = setInterval(() => {
-//       setCurrentIndex((prev) =>
-//         prev === images.length - 1 ? 0 : prev + 1
-//       );
-//     }, 3000); // Change slide every 3 seconds
-
-//     return () => clearInterval(timer);
-//   }, []);
-
-  return (<>
-  <div className="picture-overal-div" style={{backgroundImage:`url("https://images.pexels.com/photos/7870878/pexels-photo-7870878.jpeg")`}}>
-<div className="picture-text-div">
-<h2 className="picture-text-h2"><span>30%</span> Discount for New  shoppers.</h2>
-<p className="picture-text-p">Simple Style. Everyday Confidence.</p>
-<div className="">
-    <button className="picture-text-btn">Shop Now</button>
-</div>
-</div>
-
-  </div>
-  
-  </>
-    
-  )
+  return (
+    <>
+      <div
+        className="picture-overal-div"
+        style={{
+          backgroundImage: `url("https://images.pexels.com/photos/7870878/pexels-photo-7870878.jpeg")`,
+        }}
+      >
+        <div className="picture-text-div">
+          <h2 className="picture-text-h2">
+            <span>30%</span> Discount for New shoppers.
+          </h2>
+          <p className="picture-text-p">Simple Style. Everyday Confidence.</p>
+          <div className="">
+            <button className="picture-text-btn">Shop Now</button>
+          </div>
+        </div>
+      </div>
+    </>
+  );
 }
-
-
-
-
-
-
-
 
 // import "./Featured.css";
 // import { useEffect, useState, useRef } from "react";
@@ -125,8 +108,3 @@ export default function Picture() {
 // }
 
 // export default FlashSale;
-
-
-
-
-

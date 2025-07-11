@@ -143,24 +143,24 @@ function FlashSale() {
   // const [isMobile, setIsMobile] = useState(window.innerWidth <= 769);
   // const [visible, setVisible] = useState(0);
 
-//   useEffect(() => {
-//     if (!isMobile) {
-//       setVisible(3);
-//       // return () => clearInterval(interval);
-//     } else {
-//       setVisible(2);
-//     }
-//   }, [isMobile]);
+  //   useEffect(() => {
+  //     if (!isMobile) {
+  //       setVisible(3);
+  //       // return () => clearInterval(interval);
+  //     } else {
+  //       setVisible(2);
+  //     }
+  //   }, [isMobile]);
 
-//   useEffect(() => {
-//     function handleResize() {
-//   const mobile = window.innerWidth <= 768;
-//   setIsMobile(mobile);
-//   setVisible(mobile ? 2 : 3);
-// }
-//     window.addEventListener("resize", handleResize);
-//     return () => window.removeEventListener("resize", handleResize);
-//   }, []);
+  //   useEffect(() => {
+  //     function handleResize() {
+  //   const mobile = window.innerWidth <= 768;
+  //   setIsMobile(mobile);
+  //   setVisible(mobile ? 2 : 3);
+  // }
+  //     window.addEventListener("resize", handleResize);
+  //     return () => window.removeEventListener("resize", handleResize);
+  //   }, []);
 
   // console.log(visible)
   const visibleCards = 1;
@@ -176,7 +176,7 @@ function FlashSale() {
   const goNext = () => {
     setCurrentIndex((prevIndex) => {
       const nextIndex = prevIndex + visibleCards;
-      return nextIndex >= totalCards-2 ? 0 : nextIndex;
+      return nextIndex >= totalCards - 2 ? 0 : nextIndex;
     });
   };
 

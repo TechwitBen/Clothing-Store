@@ -1,7 +1,6 @@
 import { useCart } from "../Global-Variable/CartContext";
 import "./ProductCard.css";
 
-
 function ProductCard(props) {
   const { addToCart } = useCart();
 

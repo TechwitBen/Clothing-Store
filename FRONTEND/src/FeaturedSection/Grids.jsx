@@ -30,8 +30,8 @@ export default function Grids() {
         </div>
         <div className="Grid-item Griditem4">
           <div className="Griditem4-div">
-            <h2>Loviies beauty Board</h2>
-            <p>Long Wearing Cosmetics</p>
+            <h2>beauty Board</h2>
+            <p>Wearing Cosmetics</p>
             <button className="border-2 border-black">Shop Now</button>
           </div>
         </div>

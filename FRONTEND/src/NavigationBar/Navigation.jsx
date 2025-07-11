@@ -1,4 +1,5 @@
 import "./Navigation.css";
+
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { IoIosSearch } from "react-icons/io";
@@ -23,7 +24,7 @@ function Navigation() {
   let home = "/";
   let about = "/about";
   let shopStore = "/shopStore";
-  // let blog = "/blog";
+
   let contact = "/contact";
   let cartPage = "/cart";
 
@@ -77,9 +78,6 @@ function Navigation() {
 
           {/* FOR THE CENTER LINKS */}
 
-          {/*SPAN CONSISTING OF THE NAV TEXT*/}
-          {/* <span className='wholetexticon'> */}
-
           <ul className="second-nav">
             <Link to={home}>
               <li className="second-nav-text">Home</li>
@@ -90,20 +88,13 @@ function Navigation() {
             <Link to={shopStore}>
               <li className="second-nav-text">Shop/Store</li>
             </Link>{" "}
-            {/* <Link to={blog}>
-              <li className="second-nav-text">Blogs</li>
-            </Link> */}
             <Link to={contact}>
               <li className="second-nav-text">Contact</li>
             </Link>
           </ul>
 
-          {/* </span> */}
-
           {/* FOR THE ICONS AT THE RIGHT HAND SIDE*/}
           <ul className="third-nav">
-            {/*SPAN CONSISTING OF THE NAV ICONS*/}
-            {/* <li className='wholetexticon'> */}
             <li className="third-nav-text " id="thirdnav-input">
               <LuSearch className="searchIicon" />
               <input className="searchInput" type="text" />
@@ -139,7 +130,11 @@ function Navigation() {
                 setOpen(!open);
               }}
             >
-              {open ? <FaXmark className="close-btn" /> : <IoMenu className="close-btn"/>}
+              {open ? (
+                <FaXmark className="close-btn" />
+              ) : (
+                <IoMenu className="close-btn" />
+              )}
             </li>
           </ul>
         </div>

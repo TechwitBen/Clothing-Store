@@ -101,22 +101,7 @@ function Product() {
 
         <input type="submit" value="Add Product" />
       </form>
-      {/* <h2> for New Arrival</h2>
-    <form>
-<input type="text" name="Nname" onChange={} placeholder="name of products"
-value={} />
-<input type="text" name="Nprice" onChange={} placeholder="price of products $"
-value={} />
-<input type="text" name="Ntype" onChange={} placeholder="type of products"
-value={} />
-<input type="text" name="Nimage" onChange={} placeholder="image Url of products"
-value={} />
-
-<input type="submit" value="Add Product"/>
-
-
-
-    </form> */}
+     
     </>
   );
 }

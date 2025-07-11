@@ -20,7 +20,6 @@ import Blog from "./OTHERSJSX/Blog";
 import Footer from "./Footer.jsx/Footer";
 import Picture from "./FeaturedSection/Picture";
 
-
 function App() {
   const location = useLocation();
   const hideNavOnRoutes = ["/login", "/register"];
@@ -40,10 +39,9 @@ function App() {
             <>
               <Homepage />
               <Featured />
-              {/* <NewArrival /> */}
-              <Picture/>
+              <Picture />
               <FlashSale />
-              <Grids/>
+              <Grids />
               <Delivery />
               <Blog />
               <Footer />

@@ -75,11 +75,11 @@ function CartViewPage() {
                 </div>
 
                 <div className="item1flex2-item" id="item1flex2-div2">
-                  <button className="button" onClick={increment}>
+                  <button className="dec-Inc-button" onClick={increment}>
                     +
                   </button>
-                  <input type="number" className="button" value={number} />
-                  <button className="button" onClick={decrement}>
+                  <button className="dec-Inc-button">{number}</button>
+                  <button className="dec-Inc-button" onClick={decrement}>
                     {" "}
                     -
                   </button>
