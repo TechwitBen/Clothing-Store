@@ -59,6 +59,7 @@
 
 .addtocart {
   /* border: 2px solid black; */
+  margin-top: 5px;
   display: flex;
   width: 100%;
   height: 30px;
@@ -174,21 +175,25 @@
 
 @media screen and (max-width: 305px) {
   .inside-grid1 {
-    height: 200px;
+    height: 120px;
   }
   .ptext1 {
-    font-size: 1rem;
-  }
-  .ptext2 {
     font-size: 0.7rem;
   }
+  .ptext2 {
+    font-size: 0.5rem;
+  }
   .ptext3{
-    font-size: 1rem;
+    font-size: 0.7rem;
   }
   .addtocart button {
     font-size: 0.7rem;
     width: 80px;
     height: 25px;
+    padding-top: 5px;
+  }
+  .addtocart button:hover{
+    padding-top: 0;
   }
 }
 

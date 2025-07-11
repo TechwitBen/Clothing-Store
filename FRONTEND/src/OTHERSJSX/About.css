@@ -127,7 +127,7 @@ gap: 30px;
 }
 .about-grid{
 
-    border: 2px solid green;
+    /* border: 2px solid green; */
     flex: 1;
     display: flex;
     justify-content: center;

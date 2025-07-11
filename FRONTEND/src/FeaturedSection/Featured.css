@@ -9,7 +9,7 @@
   min-height: auto;
   /* margin-top: 20px; */
   /* border: 2px solid black; */
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 
   background-color: white;
 }
@@ -105,7 +105,7 @@ span {
 }
 
 .flash-text {
-  font-size: 23px;
+  font-size: 20px;
   font-weight: 600;
   letter-spacing: 3px;
 }
@@ -157,6 +157,8 @@ span {
   border-radius: 5px;
   z-index: 1000;
   font-size: 13px;
+  background-color: black;
+  color: white;
 }
 .flex2 {
   height: 50px;
@@ -169,28 +171,34 @@ span {
   height: 100%;
   align-items: center;
 }
+.flex2-Div h2{
+  font-size: 1rem;
+}
 
 .leftBtn {
   position: absolute;
   left: 16px;
   top: 25%;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   width: 30px;
   height: 30px;
   /* margin-left: 10px; */
   border-radius: 50%;
   font-size: 13px;
+  /* background-color: black; */
+  color: black;
 }
 .rightBtn {
   position: absolute;
   right: 17px;
   top: 25%;
-  border: 2px solid black;
   width: 30px;
   height: 30px;
   /* margin-right: 10px; */
   border-radius: 50%;
   font-size: 13px;
+  
+  color: black;
 }
 
 @media screen and (max-width: 412px) {
@@ -200,6 +208,18 @@ span {
   .header-text {
     font-size: 0.8rem;
   }
+  .flex2-Div h2{
+  font-size: 0.7rem;
+}
+.flex1-btn {
+    width: 70px;
+    font-size: 0.7rem;
+    
+  }
+  .flash-text {
+  font-size: 15px;
+}
+
 }
 @media screen and (min-width: 768px) {
   .discount-overal {
@@ -278,7 +298,7 @@ span {
     position: absolute;
     left: 20px;
     top: 40%;
-    border: 2px solid black;
+   
     width: 50px;
     height: 50px;
     /* margin-left: 10px; */
@@ -289,7 +309,7 @@ span {
     position: absolute;
     right: 20px;
     top: 40%;
-    border: 2px solid black;
+    
     width: 50px;
     height: 50px;
     /* margin-right: 10px; */
@@ -299,6 +319,9 @@ span {
   .header-text {
     font-size: 20px;
   }
+  .flash-text {
+  font-size: 20px;
+}
 }
 
 @media screen and (min-width: 480px) and (max-width: 768px) {
@@ -367,7 +390,15 @@ span {
   }
 
   .header-text {
-    font-size: 20px;
+    font-size: 18px;
+  }
+  .flex2-Div h2{
+  font-size: 0.8rem;
+}
+.flex1-btn {
+    width: 80px;
+    font-size: 0.8rem;
+    
   }
 }
 
@@ -375,11 +406,27 @@ span {
   .header-text {
     font-size: 1rem;
   }
+   .flex2-Div h2{
+  font-size: 0.7rem;
+}
+.flex1-btn {
+    width: 80px;
+    font-size: 0.8rem;
+    
+  }
 }
 
 @media screen and (min-width: 412px) and (max-width: 768px) {
   .header-text {
     font-size: 1.2rem;
+  }
+   .flex2-Div h2{
+  font-size: 0.8rem;
+}
+.flex1-btn {
+    width: 80px;
+    font-size: 0.8rem;
+    
   }
 }
 
@@ -403,66 +450,8 @@ span {
   .Overal-grid-div {
     grid-template-columns: repeat(4, minmax(200px, 1fr));
   }
+  .flash-text {
+  font-size: 23px;
+}
 }
 
-/* ✅ Medium Screens (Tablets & Small Laptops - 768px and below) */
-/* @media screen and (max-width: 768px) {
-  .Overal-grid-div {
-    grid-template-columns: repeat(4, minmax(155px, 1fr));
-    gap: 15px;
-    padding: 8px;
-    
-      overflow-x: scroll;
-       grid-auto-flow: column; 
-      grid-template-rows: repeat(2, 1fr); 
-  }
-  .button1-sub button {
-    width: 130px;
-  }
-  .Overal-new-grid-div {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 15px;
-    padding: 8px;
-  }
-  .button1-sub button {
-    width: 130px;
-  }
-  .header-text {
-  font-size: 18px;
-  
- 
-}
-} */
-
-/* ✅ Small Screens (Phones - 480px and below)  */
-
-/* @media screen and (max-width: 480px) {
-  
-  STYLING FOR BEST SELLING OVERAL DIV
-  .Overal-grid-div {
-   grid-template-rows: repeat(2, 1fr); 
-    grid-auto-flow: column; 
-    grid-template-columns: repeat(4, minmax(120px, 1fr));
-    gap: 16px;
-    
-    overflow-x: scroll;
-  }
-
-  NEW ARRIVAL OVERAL DIV STYLING
-  .Overal-new-grid-div {
-  
-    grid-template-rows: repeat(3, 1fr); 
-    grid-auto-flow: column; 
-    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
-    gap: 16px;
-    border: 2px solid yellow;
-    width: 100%;
-    overflow: hidden;
-  }
-
-  .inside-grid1 {
-    height: 100px;
-    border: 2px solid red;
-  }
-
-} */

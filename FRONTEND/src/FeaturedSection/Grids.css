@@ -1,5 +1,5 @@
 .Grid-Overal {
-  border: 2px solid green;
+  /* border: 2px solid green; */
   max-width: 90%;
   min-height: 350px;
   display: grid;
@@ -7,13 +7,15 @@
   gap: 10px;
   margin: 0 auto;
 }
-.Grid-item {
+/* .Grid-item {
   border: 2px solid red;
-}
+} */
 .Griditem1 {
   display: flex;
-  background: linear-gradient(to bottom, #fff, #ddd);
-
+ background-image: url(https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?q=80&w=871&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   color: rgb(202, 34, 34);
 }
 .Griditem3 {
@@ -27,70 +29,81 @@
   align-items: center;
 }
 .Griditem1-div {
-  border: 2px solid black;
+  /* border: 2px solid black; */
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: end;
   color: black;
 }
 
 .Griditem1-div-div {
-  border: 2px solid red;
+  /* border: 2px solid red; */
   width: 100%;
-  height: 80px;
+  height: 60px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
-  font-size: 0.65rem;
+  font-size: 0.60rem;
   font-weight: 600;
+  /* line-height: 11px; */
+  color: wheat;
 }
 .Griditem1-div-div button {
   /* font-size: 13px; */
   width: 50%;
   background-color: black;
+  margin-bottom: 5px;
   color: white;
+  /* font-size: 0.4rem; */
 }
 
 .Griditem2 {
   display: flex;
   justify-content: center;
-  align-items: center;
-  background-color: #819a91;
+  align-items: end;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(https://images.unsplash.com/photo-1640295302958-4d9365b45498?q=80&w=838&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
 }
 .Griditem2-div {
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
   width: 100%;
   height: 80px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
   font-weight: 600;
   font-size: 0.65rem;
+   color: wheat;
 }
 .Griditem2-div button {
   width: 50%;
   background-color: black;
   color: white;
+  margin-bottom: 5px;
+  /* height: 20px; */
 }
 .Griditem3 {
-  background-image: url(https://images.pexels.com/photos/32642026/pexels-photo-32642026.jpeg);
+  background-image: url(https://images.unsplash.com/photo-1599941920272-ea1bc8291eaa?q=80&w=871&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-}
+ }
+/*https://images.unsplash.com/photo-1612731486606-2614b4d74921?q=80&w=820&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D */
 .Griditem3-div {
-  border: 2px solid red;
+  /* border: 2px solid red; */
   font-size: 0.65rem;
   width: 100%;
   height: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-
+  color: wheat;
   padding: 10px;
   font-weight: 600;
 }
@@ -105,18 +118,23 @@
   justify-content: start;
 }
 .Griditem4-div {
-  border: 2px solid black;
+  /* border: 2px solid black; */
+ 
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   font-size: 0.65rem;
+    color: wheat;
   font-weight: 600;
 }
 .Griditem4-div button {
   width: 70%;
   margin-top: 5px;
+  background-color: black;
+  color: white;
+  
 }
 
 @media screen and (max-width: 400px) {
@@ -127,16 +145,22 @@
     font-size: 0.65rem;
   }
   .Griditem1-div-div button {
-    font-size: 0.7rem;
+    font-size: 0.5rem;
   }
   .Griditem2-div {
     font-size: 0.65rem;
   }
   .Griditem2-div button {
-    font-size: 0.7rem;
+    font-size: 0.5rem;
   }
   .Griditem3-div {
     font-size: 0.7rem;
+  }
+  /* .Griditem4-div {
+     font-size: 0.5rem;
+  } */
+  .Griditem4-div button {
+    font-size: 0.5rem;
   }
 }
 @media screen and (max-width: 360px) {
@@ -167,7 +191,7 @@
 
 @media screen and (min-width: 769px) {
   .Grid-Overal {
-    border: 2px solid green;
+    /* border: 2px solid green; */
     margin: 0 auto;
     max-width: 80%;
     min-height: 500px;
@@ -175,42 +199,46 @@
   }
 
   .Griditem1-div {
-    border: 2px solid yellowgreen;
+    /* border: 2px solid yellowgreen; */
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
   }
 
   .Griditem1-div-div {
-    border: 2px solid red;
-    width: 200px;
-    height: 80px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 15px;
-    color: black;
-  }
-
-  .Griditem2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .Griditem2-div {
-    border: 2px solid blue;
+    /* border: 2px solid red; */
     width: 150px;
     height: 80px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 15px;
+    font-size: 1rem;
+  }
+
+  .Griditem1-div-div button{
+    font-size: 0.90rem;
+  }
+
+  .Griditem2 {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+
+  .Griditem2-div {
+    /* border: 2px solid blue; */
+    width: 150px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
   }
   .Griditem2-div button {
-    font-size: 13px;
+    font-size: 12px;
+    height: 28px;
   }
 
   .Griditem3-div {
@@ -219,27 +247,33 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 15px;
+    font-size: 1rem;
+    
   }
 
-  .Griditem4 {
+
+  /* .Griditem4 {
     background-image: url(https://images.pexels.com/photos/6831609/pexels-photo-6831609.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
     justify-content: start;
-  }
+  } */
 
   .Griditem4-div {
-    border: 2px solid black;
-    width: 40%;
+    /* border: 2px solid black; */
+    width: 38%;
     height: 90px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 15px;
+    font-size: 1rem;
+  }
+
+  .Griditem4-div  button{
+    font-size: 0.85rem;
   }
 
   .Grid-Overal button {

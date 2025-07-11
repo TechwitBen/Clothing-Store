@@ -5,7 +5,8 @@ import ProductCard from "../Global-Variable/ProductCard";
 
 function Featured() {
   // const [products, setProducts] = useState([]);
-  const [width, setWidth] = useState(window.innerWidth);
+  // const [width, setWidth] = useState(window.innerWidth);
+ 
 
   //  I DID THE BACKEND FOR THIS BUT I CAN'T RUN IT ON VERCEL OR GITHUB SO I JUST PASTED THE PRODUCTS HERE INSTEAD
   const products = [
@@ -74,15 +75,18 @@ function Featured() {
         "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/69/1274852/1.jpg?6242",
     },
   ];
-  useEffect(() => {
-    const handleResize = () => {
-      setWidth(window.innerWidth);
-    };
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
+
+
+  // useEffect(() => {
+  //   const handleResize = () => {
+  //     setWidth(window.innerWidth);
+  //   };
+  //   window.addEventListener("resize", handleResize);
+  //   return () => {
+  //     window.removeEventListener("resize", handleResize);
+  //   };
+  // }, []);
+ 
 
   // useEffect(() => {
   //   async function productItem() {

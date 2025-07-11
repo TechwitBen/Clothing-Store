@@ -51,7 +51,11 @@ function App() {
             </>
           }
         />
-        <Route path="/about" element={<About />} />
+        <Route path="/about" element={
+          <>
+          <About />
+           {/* <Footer /> */}
+          </>} />
         <Route path="/shopStore" element={<Shop />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/cart" element={<CartViewPage />} />
