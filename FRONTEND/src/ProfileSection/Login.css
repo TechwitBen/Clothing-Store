@@ -22,7 +22,7 @@
 .overal-content{
     /* border: 2px solid green; */
     min-width: 300px;
-    height: 400px;
+    height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -126,6 +126,12 @@ align-items: center;
 color: rgb(5, 28, 238);
 }
 
+#reigsterText{
+    font-size: 0.9rem;
+}
+
+
+
 @media screen and (min-width: 1015px)and (max-width: 1186px) {
  .overal-content{
     /* border: 2px solid green; */
@@ -154,9 +160,13 @@ color: rgb(5, 28, 238);
 @media screen and (min-width: 768px){
 .overal-content{
      min-width: 50%;
+   
 }
 .textInputs{
      min-width: 90%;
+}
+#reigsterText{
+    font-size: 1rem;
 }
 }
 
@@ -174,9 +184,9 @@ color: rgb(5, 28, 238);
  .overal-content{
     /* border: 2px solid green; */
     min-width: 40%;
-    height: 400px;
+      height: 400px;
      margin-top: 100px;
-     height: 450px;
+
 }.textInputs{
      min-height: 400px;
      min-width: 80%;

@@ -14,6 +14,7 @@ display: flex;
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
+justify-content: center;
 
 }
 .overal-registercontent1{
@@ -24,7 +25,7 @@ background-size: cover;
 
 .overal-registercontent2{
     /* border: 2px solid black; */
-     min-width: 100%;
+     min-width: 90%;
      /* min-height: 100%; */
      height: 600px;
      display: flex;
@@ -227,7 +228,14 @@ input::-webkit-credentials-auto-fill-button {
 
 
 @media screen and (min-width: 700px){
+.overal-registerdiv{
+    /* border: 2px solid red; */
+max-width: 100%;
+height: 100vh;
 
+justify-content: initial;
+
+}
 .overal-registercontent1{
     /* border: 2px solid black; */
     width: 46%;
