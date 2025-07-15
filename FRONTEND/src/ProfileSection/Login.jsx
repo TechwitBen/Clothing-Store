@@ -11,6 +11,7 @@ function Login() {
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
   const [loginError, setLoginError] = useState(false);
+   const [width, setWidth] = useState(window.innerWidth);
   const navigate = useNavigate();
 
   const playBeep = () => {
@@ -22,6 +23,18 @@ function Login() {
     oscillator.start();
     oscillator.stop(audioCtx.currentTime + 0.1); // play for 0.1 second
   };
+
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWidth(window.innerWidth);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+ 
 
   async function handleSubmit(e) {
     e.preventDefault();
@@ -70,7 +83,7 @@ const username = email
   return (
     <>
       {/* OVERAL DIV */}
-      <div className="overal-div">
+      <div className="overal-div ">
         {/* DIV CONTAINING OVERAL CONTENT */}
         <div className="overal-content">
           {/* DIV CONTAINING TEXT AND INPUTS */}

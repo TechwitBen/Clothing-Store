@@ -5,8 +5,120 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 .overal-registerdiv{
     /* border: 2px solid red; */
+max-width: 100%;
+height: 100vh;
+display: flex;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+
+}
+.overal-registercontent1{
+    /* border: 2px solid black; */
+    width: 0;
+   
+}
+
+.overal-registercontent2{
+    /* border: 2px solid black; */
+     min-width: 100%;
+     /* min-height: 100%; */
+     height: 600px;
+     display: flex;
+     justify-content: center;
+     align-items: normal;
+     margin-top: 100px;
+     background-color: white;
+}
+.registerTextInputs{
+    /* border: 2px solid green; */
+    min-width: 90%;
+    max-width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.registerText-div{
+/* border: 2px solid blue; */
+width: 55%;
+height: 150px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+}
+.register-h2{
+    font-size: 15px;
+    font-weight: 600;
+
+}
+.register-p{
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+.register-span{
+    color: blue;
+}
+.registerForm{
+    /* border: 2px solid blue; */
+    height: 100%;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 35px;
+}
+.registerInput-div{
+    /* border: 2px solid yellow; */
+    position: relative;
+}
+.registerIcon{
+    position: absolute;
+    right: 5px;
+    top: 12px;
+}
+.registerInputs{
+    border: 2px solid black;
+    border-bottom: 2px solid black;
+    height: 45px;
+    width: 100%;
+    outline: none;
+}
+#regBtn{
+    background-color: black;
+    color: white;
+}
+.registerInputs::-ms-reveal,
+.registerInputs::-ms-clear {
+  display: none;
+}
+
+input::-webkit-credentials-auto-fill-button {
+  visibility: hidden;
+  display: none !important;
+  pointer-events: none;
+  height: 0;
+  width: 0;
+  margin: 0;
+}
+#regBtn{
+    border-bottom: none;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+#regBtn:active{
+    background-color: blue;
+    color: white;
+}
+/* .overal-registerdiv{
+    border: 2px solid red;
 max-width: 100%;
 height: 100vh;
 display: flex;
@@ -15,7 +127,7 @@ display: flex;
 .overal-registercontent1{
     border: 2px solid black;
     width: 750px;
-    /* min-width: 200px; */
+   
 }
 .overal-registercontent2{
     border: 2px solid black;
@@ -30,7 +142,7 @@ display: flex;
 .registerTextInputs{
     border: 2px solid green;
     min-width: 400px;
-     /* min-width: ; */
+    
     max-width: 500px;
     height: 500px;
     display: flex;
@@ -40,7 +152,7 @@ display: flex;
     gap: 20px;
 }
 .registerText-div{
-/* border: 2px solid blue; */
+border: 2px solid blue;
 width: 200px;
 height: 150px;
 display: flex;
@@ -63,18 +175,16 @@ justify-content: center;
 }
 
 .registerForm{
-    /* border: 2px solid blue; */
+    border: 2px solid blue;
     height: 100%;
-    /* width: 100%; */
-    /* flex: 1; */
-    /* max-width: 100%; */
+   
     display: flex;
     width: 100%;
     flex-direction: column;
     gap: 20px;
 }
 .registerInput-div{
-    /* border: 2px solid yellow; */
+    border: 2px solid yellow;
     position: relative;
 }
 
@@ -84,7 +194,7 @@ justify-content: center;
     top: 12px;
 }
 .registerInputs{
-    /* border: 1px solid black; */
+    border: 1px solid black;
     border-bottom: 2px solid black;
     height: 45px;
     width: 100%;
@@ -112,4 +222,87 @@ input::-webkit-credentials-auto-fill-button {
 #regBtn:active{
     background-color: blue;
     color: white;
+} */
+
+
+
+@media screen and (min-width: 700px){
+
+.overal-registercontent1{
+    /* border: 2px solid black; */
+    width: 46%;
+    background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+background-image: url(https://images.unsplash.com/photo-1558769132-cb1aea458c5e?q=80&w=1674&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+   
+}
+.overal-registercontent2{
+    width: 45%;
+     min-width: 25%;
+     min-height: 100%;
+      align-items: center;
+       margin-top: 0;
+}
+.registerTextInputs{
+    min-width: 70%;
+    max-width: 70%;
+    height: 500px;
+   
+}
+.register-h2{
+    font-size: 30px;
+    font-weight: 600;
+
+}
+.register-p{
+    font-size: 0.9rem;
+}
+}
+
+@media screen and (min-width: 700px)and (max-width:1168px){
+    .register-h2{
+    font-size: 20px;
+    font-weight: 600;
+
+}
+.register-p{
+    font-size: 0.8rem;
+}
+.overal-registercontent2{
+    width: 50%;
+}
+.registerTextInputs{
+    min-width: 80%;
+    max-width: 100%;
+}
+}
+
+@media screen and (min-width: 700px)and (max-width:800px){
+    .overal-registercontent2{
+    width: 54%;
+}
+.registerTextInputs{
+    min-width: 90%;
+}
+}
+
+@media screen and (min-width: 500px)and (max-width: 700px){
+.registerTextInputs{
+    min-width: 70%;
+    max-width: 100%;
+}
+}
+
+@media screen and (max-width: 328px){
+
+.register-p{
+    font-size: 0.6rem;
+}
+}
+
+@media screen and (min-width: 1300px){
+.register-p{
+    font-size: 1rem;
+}
 }

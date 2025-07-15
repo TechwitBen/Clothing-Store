@@ -163,7 +163,7 @@ function FlashSale() {
   //   }, []);
 
   // console.log(visible)
-  const visibleCards = 1;
+  const visibleCards = 3;
   const totalCards = flashSale.length;
 
   useEffect(() => {

@@ -455,3 +455,8 @@ span {
 }
 }
 
+@media screen and (min-width: 1500px) {
+.flash-flex {
+  min-width: 500px;
+}
+}

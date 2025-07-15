@@ -7,6 +7,7 @@ import { MdEmail } from "react-icons/md";
 import { FaLock } from "react-icons/fa";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import clothBackground from "../images/clothBackground.png"
 
 function Register() {
   const [username, setUsername] = useState("");
@@ -85,7 +86,7 @@ function Register() {
   return (
     <>
       {/* OVERAL DIV */}
-      <div className="overal-registerdiv">
+      <div className="overal-registerdiv" style={{ backgroundImage: `url(${clothBackground})` }}>
         {/* DIV CONTAINING THE TWO DIVS*/}
         <div className="overal-registercontent1" ></div>
         {/* DIV CONTAINING OVERAL CONTENT */}
