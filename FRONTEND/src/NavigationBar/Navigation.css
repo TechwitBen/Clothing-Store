@@ -214,6 +214,10 @@
   #thirdnav-input {
     width: 100px;
   }
+  .third-nav {
+    /* gap: 16px; */
+    font-size: 17px;
+  }
 }
 @media screen and (min-width: 960px) and (max-width: 1110px) {
   .second-nav {
@@ -224,6 +228,7 @@
     width: 80px;
     height: 45px;
   }
+  
 }
 
 @media screen and (min-width: 1500px) {

@@ -11,20 +11,52 @@ function CartViewPage() {
   const { cartItems } = useCart();
   const [dropDown, setDropDown] = useState(false);
   const [numberInput, setNumberInput] = useState(0);
-  const [number, setNumber] = useState(1);
-
+  const [totalPrice, setTotalPrice] = useState(0);
+  const [quantities, setQuantity] = useState({});
   const [width, setWidth] = useState(window.innerWidth);
 
-  function handleNumberInput(e) {
-    const { name, value } = e.target;
+  // function handleNumberInput(e) {
+  //   const { name, value } = e.target;
+  // }
+
+  
+useEffect(()=>{
+const initialQuant = {};
+cartItems.forEach(carItem=> {
+  initialQuant[carItem.id] = 1;
+});
+
+
+setQuantity(initialQuant)
+
+
+},[cartItems])
+
+
+useEffect(()=>{
+  const totalPrice = cartItems.reduce((acc,cartItem)=>{
+  const quantity = quantities[cartItem.id] || 1;
+  return acc + cartItem.price * quantity;
+},0)
+
+
+setTotalPrice(totalPrice)
+},[quantities,cartItems])
+
+  function increment(id) {
+    setQuantity((prev)=>({
+      ...prev,
+      [id]:prev[id] + 1
+    }));
+  }
+  function decrement(id) {
+    setQuantity((prev)=>({
+      ...prev,
+      [id]: Math.max(prev[id]-1,1)
+    }));
   }
 
-  function increment() {
-    setNumber(number + 1);
-  }
-  function decrement() {
-    setNumber(number - 1);
-  }
+  
 
   useEffect(() => {
     const handleResize = () => {
@@ -35,6 +67,7 @@ function CartViewPage() {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+
 
   return (
     <>
@@ -75,12 +108,11 @@ function CartViewPage() {
                 </div>
 
                 <div className="item1flex2-item" id="item1flex2-div2">
-                  <button className="dec-Inc-button" onClick={increment}>
+                  <button className="dec-Inc-button" onClick={()=>increment(cartItem.id)}>
                     +
                   </button>
-                  <button className="dec-Inc-button">{number}</button>
-                  <button className="dec-Inc-button" onClick={decrement}>
-                    {" "}
+                  <button className="dec-Inc-button">{quantities[cartItem.id]}</button>
+                  <button className="dec-Inc-button" onClick={()=>decrement(cartItem.id)}>
                     -
                   </button>
                 </div>
@@ -103,7 +135,7 @@ function CartViewPage() {
 
             <div className="item2-flex-item" id="item2-div2">
               <h2>ITEMS:{cartItems.length}</h2>
-              <p>$137.00</p>
+              <p>${totalPrice}</p>
             </div>
             <div className="item2-flex-item" id="item2-div3">
               <h2>SHIPPING</h2>
@@ -138,7 +170,7 @@ function CartViewPage() {
 
             <div className="item2-flex-item" id="item2-div6">
               <h2>TOTAL PRICE</h2>
-              <p>$137.00</p>
+              <p>${totalPrice}.00</p>
             </div>
             <div className="item2-btn-div">
               <button>CHECKOUT</button>
@@ -157,8 +189,3 @@ function CartViewPage() {
 
 export default CartViewPage;
 
-// <ion-icon
-//   name={catDropdown ? "person-circle-outline" : "list-outline"}
-//   class="text-white pr-1"
-//   onClick={dropCategoryList}
-// ></ion-icon>
